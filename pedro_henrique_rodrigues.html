@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pedro Henrique Rodrigues - Teste</title>
+        <style>
+            .box {
+                background-color: lightgray;
+                max-width: 50%;
+                border-radius: 20px;
+                border: solid 2px;
+                border-color: black;
+                text-rendering: optimizeLegibility;
+            }
+            #textos {
+                padding: 10px;
+            }
+            
+            #img {
+                width: 200px;
+                padding: 8px;
+                border: solid 2px;
+                border-color: aqua;
+                border-radius: 20px;
+            }
+            
+            input, button, textarea {
+                font: 400 18px;
+            }
+            
+            .verde {
+                background-color: #A5D6A7;
+            }
+            
+            .roxo {
+                background-color: #B39DDB;
+            }
+        </style>
+    </head>
+    <body style="background-color: aquamarine; font-family: cursive">
+        <button onclick="verde()">Tema Verde</button>
+        <button onclick="roxo()">Tema Roxo</button>
+        
+        <div class="box" id="boxModifier">
+            <section id="textos">
+            <h2><center>Sobre mim:</center></h2>
+        <p>Meu nome é Pedro Henrique Rodriguês dos Santos, 21 anos. Eu moro no<br> interior de SP (Narandiba/SP) [Uma cidade menor que seu polegar] <br>Sou estudante ja da area de tecnologia e manjo de outras coisas <br>que vão <b>formigar</b> o queixo de vocês.<br>
+        Ainda sou universitário e estudo na UNIP EaD com análise de<br>
+        sistemas. Ainda sou jovem então não tive muitas conquistas<br>
+        de mercado. Mas ja fiz cursos de programação para sites e jogos.</p>
+        <hr color="black" size="3px" />
+        <h3>Meus Hobbies:</h3>
+        <ol style="font-family: fantasy">
+            <li>Basquete<i>(Segura essa Rafa)</i></li>
+            <li>Produção Musical</li>
+            <li>Séries</li>
+            <li>Joga uns joguinho</li>
+        </ol>
+                
+        <h3>Minhas Qualidades:</h3>
+        <ul style="font-family: fantasy">
+            <li>Paciente</li>
+            <li>Disposto a ouvir conselhos</li>
+            <li>Animado</li>
+            <li>Descritivo</li>
+            <li>Não falo palavrão(posso provar kkk)</li>
+            <li>Religioso</li>
+        </ul> 
+                
+        <h3>Meus defeitos:</h3>
+        <ul style="font-family: fantasy">
+            <li>Procrastinador</li>
+            <li>Negativo sob pressão</li>
+            <li>Insensivel [as vezes]</li>
+            <li>Psicologico fraco [talvez sensível diria...]</li>
+            <li>inexperiente</li>
+        </ul> 
+                
+        <ol>
+            <li><a href="https://www.facebook.com/pedromogly">Facebook</a></li>
+            <li><a href="https://github.com/pedromogly">Github</a></li>
+        </ol>
+            <div id="img">
+            <a href="https://www.linkedin.com/in/pedromogly/" target="_blank">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF8_7c9ANTH0w/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=UE56AiQiv4lHaGiuGdgCNXfjqd6vxgGsrfxe9gAwJgk"></a>
+            </div>
+        <br><a href="https://soundcloud.com/kaalootracks1" target="_blank">Aqui o link que vai formigar o queixo de vocês como prometido</a>
+            </section>
+        </div>
+    
+        <script>
+            function verde() {
+                limpar();
+                document.getElementById("boxModifier").classList.add('verde');
+            }
+            
+            function roxo() {
+                limpar();
+                document.getElementById("boxModifier").classList.add('roxo');
+            }
+            
+            function limpar() {
+                document.getElementById("boxModifier").classList.remove("verde","roxo");
+            }
+        
+        </script>
+    </body>
+</html>
